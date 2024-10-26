@@ -4,10 +4,10 @@ from time import sleep
 import os
 import pickle
 
-dirname = r"E:\Snapchat"
-driver = webdriver.Chrome(executable_path=r"chromedriver/chromedriver.exe")
+dirname = r"<path-to-output-files>"
+driver = webdriver.Chrome(executable_path=r"<path-to-chromedriver-executable>")
 
-driver.get("file:///C:/Users/Oasis/Downloads/mydata_1635469907106/html/memories_history.html")
+driver.get("<path-to-input-html-file>")
 
 sleep(1)
 

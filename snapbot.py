@@ -6,16 +6,16 @@ import glob
 import pickle
 
 chromeOptions = webdriver.ChromeOptions()
-dirname = r"E:\Snapchat"
+dirname = r"<path-to-output-files>"
 prefs = {"download.default_directory" : dirname}
 chromeOptions.add_experimental_option("prefs",prefs)
-driver = webdriver.Chrome(executable_path=r"chromedriver/chromedriver.exe", options=chromeOptions)
+driver = webdriver.Chrome(executable_path=r"<path-to-chromedriver-executable>", options=chromeOptions)
 
-driver.get("file:///C:/Users/Oasis/Downloads/mydata_1635469907106/html/memories_history.html")
+driver.get("<path-to-input-html-file>")
 
 sleep(1)
 
-d = "2021-10-25 11-13-42"
+d = "<yyyy-mm-dd hh-mm-ss>"
 d1 = ""
 d2 = ""
 restart = False

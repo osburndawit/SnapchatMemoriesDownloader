@@ -1,7 +1,7 @@
 import os
 import glob
 
-dirname = r"E:\Snapchat"
+dirname = r"<path-to-output-files>"
 
 files = glob.glob(os.path.join(dirname, "*.mp4")) + glob.glob(os.path.join(dirname, "*.jpg"))
 
